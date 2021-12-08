@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script type="module" src="./script.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png" />
+    <meta
+      name="description"
+      content="Play Rock, Paper, Scissors against the Computer where AI recognizes which of the three Symbols you hold up to the camera."
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="pages" id="pageOne">
+      <h1 class="appTitle">Rock, Paper, Scissors</h1>
+      <p>Click the "Start"-Button to Start the App.</p>
+      <p class="explanation">tbd</p>
+      <button id="startButton">Start</button>
+    </div>
+
+    <div class="pages" id="pageTwo">
+      <h1 class="appTitle">Rock, Paper, Scissors</h1>
+      <p>
+        Click on the "Snapshot" button to Capture the current Snapshot and show
+        it on screen.<br />
+        You will also be able to see what the AI predictied that you showed in
+        the Picture.
+      </p>
+      <video id="video" autoplay="true"></video><br />
+      <button class="button-snap" id="snapshot">Snapshot</button>
+    </div>
+
+    <div class="pages" id="pageThree">
+      <h1 class="appTitle">Rock, Paper, Scissors</h1>
+      <p>
+        Click the "Continue" button to see what the Computer chose and who
+        wins.<br />
+        Or click the "Restart" button to start over.
+      </p>
+      <canvas hidden id="canvas" width="224" height="224"></canvas>
+      <canvas hidden id="canvas2" width="848" height="477"></canvas>
+      <img hidden id="photo" width="224" height="224" />
+      <img id="photo2" width="848" height="477" />
+      <h3 id="headlinePrediction">Prediction:</h3>
+      <ul id="predictionList"></ul>
+      <button id="continue">Continue</button>
+      <button class="replay" id="refreshP3">Restart</button>
+    </div>
+
+    <div class="pages" id="pageFour">
+      <h1 class="appTitle">Rock, Paper, Scissors</h1>
+      <p>
+        If you want to reset your score against the computer, click the "Delete
+        Score".<br />
+        Or with the "Restart" button you can start a new game.
+      </p>
+      <div class="flex-container">
+        <div>
+          <img id="playerValueImage" src="#" /><br />
+          <h2 id="playerValue"></h2>
+        </div>
+        <div>
+          <img id="computerValueImage" src="#" /><br />
+          <h2 id="npcRnd"></h2>
+        </div>
+      </div>
+      <h2 id="result"></h2>
+      <h2 id="score"></h2>
+      <button id="deleteCookies">Delete Score</button>
+
+      <button class="replay" id="refreshP4">Restart</button>
+    </div>
+  </body>
+</html>
