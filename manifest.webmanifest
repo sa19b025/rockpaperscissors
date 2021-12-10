@@ -4,7 +4,7 @@
     "display": "standalone",
     "orientation": "portrait",
     "scope": "/",
-    "start_url": "/",
+    "start_url": "/src/",
     "name": "Rock, Paper, Scissors",
     "short_name": "Rock, Paper, Scissors",
     "description": "Play Rock, Paper, Scissors against the Computer where AI recognizes which of the three Symbols you hold up to the camera.",
