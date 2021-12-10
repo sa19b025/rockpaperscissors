@@ -5,10 +5,12 @@
   "main": "index.js",
   "dependencies": {
     "@teachablemachine/image": "^0.8.5",
-    "@tensorflow/tfjs": "^3.12.0"
+    "@tensorflow/tfjs": "^3.12.0",
+    "http-server": "^14.0.0"
   },
   "devDependencies": {},
   "scripts": {
+    "serve": "http-server -p 1222 build -c-1",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
