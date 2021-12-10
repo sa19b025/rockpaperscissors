@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Finger Paint");
-@import url("https://fonts.googleapis.com/css?family=Sora");
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Sora&display=swap');
 body {
   font-family: "Sora";
   background: linear-gradient(to right, #ccffff 0%, #ffcccc 100%);
