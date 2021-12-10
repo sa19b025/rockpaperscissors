@@ -1,19 +1,25 @@
 {
   "name": "rockpaperscissors",
   "version": "1.0.0",
-  "description": "",
+  "description": "Play Rock, Paper, Scissors against the Computer where AI recognizes which of the three Symbols you hold up to the camera.",
+  "main": "index.js",
   "dependencies": {
     "@teachablemachine/image": "^0.8.5",
     "@tensorflow/tfjs": "^3.12.0"
   },
-  "devDependencies": {
-    "parcel": "^2.0.1"
-  },
+  "devDependencies": {},
   "scripts": {
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sa19b025/rockpaperscissors.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sa19b025/rockpaperscissors/issues"
+  },
+  "homepage": "https://github.com/sa19b025/rockpaperscissors#readme"
 }
