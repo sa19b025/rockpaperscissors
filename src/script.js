@@ -1,9 +1,5 @@
 // imports
-import {
-  getCookie,
-  setCookie,
-  deleteCookies,
-} from "./cookies.js";
+import { getCookie, setCookie, deleteCookies } from "./cookies.js";
 import { predict } from "./predict.js";
 import { stream, stopvideo } from "./stream.js";
 import { picturevideo } from "./picturevideo.js";
@@ -27,7 +23,7 @@ const constraints = {
   audio: false,
   video: {
     width: { min: 800, ideal: 1120, max: 1120 },
-    height: { min: 450, ideal: 630, max: 630 }
+    height: { min: 450, ideal: 630, max: 630 },
   },
 };
 let predictedValue = "";
