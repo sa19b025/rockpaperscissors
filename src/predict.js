@@ -1,7 +1,8 @@
 export async function predict(img) {
   // const URL = "https://teachablemachine.withgoogle.com/models/CoWEt_sY5/";
   // Link zum Freigeben Version 2: https://teachablemachine.withgoogle.com/models/SIbkI-Nno/
-  const URL = "https://teachablemachine.withgoogle.com/models/SIbkI-Nno/";
+  //const URL = "https://teachablemachine.withgoogle.com/models/SIbkI-Nno/";
+  const URL = "./models/SIbkI-Nno/";
 
   let model;
   const modelURL = URL + "model.json";
