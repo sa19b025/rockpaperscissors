@@ -1,7 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Sora&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Finger+Paint&family=Sora&display=swap");
 body {
   font-family: "Sora";
-  background: linear-gradient(to right, #ccffff 0%, #ffcccc 100%);
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    color-stop(0%, #ccffff),
+    color-stop(100%, #ffcccc)
+  );
+  background: -webkit-linear-gradient(
+    right,
+    to right,
+    #ccffff 0%,
+    #ffcccc 100%
+  );
+  background: -moz-linear-gradient(
+    to right,
+    #ccffff 0%,
+    #ffcccc 100%
+  );
+  background: linear-gradient(to right, to right, #ccffff 0%, #ffcccc 100%); 
   display: flex;
   justify-content: center;
   text-align: center;
@@ -14,7 +32,7 @@ body {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  width: 1600px;
+  width: 100%;
   margin-top: 20px;
   padding-bottom: 20px;
   border-radius: 15px;
@@ -25,7 +43,7 @@ body {
   font-weight: bold;
   text-align: center;
 }
-p{
+p {
   font-size: 18pt;
 }
 h3 {
@@ -51,7 +69,7 @@ button {
 button:hover {
   background-color: rgba(32, 110, 255, 0.8);
 }
-.hide{
+.hide {
   display: none;
 }
 .show {
@@ -94,4 +112,5 @@ button:hover {
 }
 ul {
   list-style-type: none;
+  padding-left: 0px;
 }

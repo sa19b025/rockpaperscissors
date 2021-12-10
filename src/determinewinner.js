@@ -44,11 +44,11 @@ export function determineWinner(
 
   const plaValTag = document.getElementById("playerValue");
   plaValTag.innerHTML =
-    "You chose <strong>" + maxPredictionVal + "</strong>.<br />";
+    "You chose&nbsp;<strong>" + maxPredictionVal + "</strong>.<br />";
   setCookie("ComputerWins", computerWins, 5);
   const npcValTag = document.getElementById("npcRnd");
   npcValTag.innerHTML =
-    "The Computer chose <strong>" + valueNPC + "</strong>.<br />";
+    "The Computer chose&nbsp;<strong>" + valueNPC + "</strong>.<br />";
   const resultTag = document.getElementById("result");
   resultTag.innerHTML = result;
   const score = document.getElementById("score");

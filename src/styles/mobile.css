@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Finger+Paint&family=Sora&display=swap");
+body {
+  background: linear-gradient(to right, #ccffff 0%, #ffcccc 100%);
+  background: -webkit-linear-gradient(right, from(#ccffff), to(#ffcccc));
+  width: 100%;
+  font-family: "Sora";
+  font-size: 14px;
+  margin: 0px;
+}
+.appTitle {
+  font-family: "Finger Paint";
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+}
+img {
+  width: 80%;
+  height: auto;
+}
+video {
+  width: 80%;
+  height: auto;
+}
+#playerValueImage,
+#computerValueImage {
+  display: inline;
+  width: 150px;
+  height: 150px;
+}
+#continue,
+#refreshP3,
+#deleteCookies,
+#refreshP4,
+#startButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto 0 auto;
+  width: 10rem;
+  height: 100%;
+  padding: 3px;
+  font-size: 14pt;
+  border: 1px lightblue solid;
+  border-radius: 4px;
+}
+#continue:hover,
+#refreshP3:hover,
+#deleteCookies:hover,
+#refreshP4:hover,
+#startButton:hover {
+  background-color: rgb(62, 185, 226);
+}
+#deleteCookies {
+  background-color: #dc3545;
+}
+#deleteCookies:hover {
+  background-color: rgb(32, 110, 255);
+}
+#snapshot {
+  margin-top: 10px;
+  width: 40%;
+  height: auto;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 0px;
+}
+h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+  font-variant: small-caps;
+  text-decoration: underline;
+  font-size: 1.8rem;
+}
+h2{
+  font-size: 1.4rem;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+li {
+  font-size: 18px;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: inline;
+}
+p{
+  margin-left: 5%;
+  margin-right: 5%;
+}

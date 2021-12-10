@@ -26,8 +26,8 @@ let computerWins = getCookie("ComputerWins");
 const constraints = {
   audio: false,
   video: {
-    width: 1120,
-    height: 630,
+    width: { min: 800, ideal: 1120, max: 1120 },
+    height: { min: 450, ideal: 630, max: 630 }
   },
 };
 let predictedValue = "";

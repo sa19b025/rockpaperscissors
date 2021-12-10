@@ -29,7 +29,7 @@ export async function predict(img) {
     li.appendChild(
       document.createTextNode(
         predictionClassName +
-          " " +
+          ": " +
           Math.round(predictionPercentage * 10000) / 100 +
           "%"
       )
