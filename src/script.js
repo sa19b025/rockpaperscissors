@@ -8,7 +8,7 @@ import { predict } from "./predict.js";
 import { stream, stopvideo } from "./stream.js";
 import { picturevideo } from "./picturevideo.js";
 import { determineWinner } from "./determinewinner.js";
-import { npcRand } from "./npcrand.js";
+import { npcRand } from "./npcRand.js";
 
 // Handle Cookies
 if (!getCookie("PlayerWins") && !getCookie("ComputerWins")) {
