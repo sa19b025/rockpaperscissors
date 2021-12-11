@@ -5,6 +5,7 @@ import { stream, stopvideo } from "./stream.js";
 import { picturevideo } from "./picturevideo.js";
 import { determineWinner } from "./determinewinner.js";
 import { npcRand } from "./npcRand.js";
+import { selectinputdevices } from "./selectinputdevices.js";
 
 // Handle Cookies
 if (!getCookie("PlayerWins") && !getCookie("ComputerWins")) {
@@ -13,19 +14,10 @@ if (!getCookie("PlayerWins") && !getCookie("ComputerWins")) {
 }
 console.log("PlayerWins: " + getCookie("PlayerWins"));
 console.log("ComputerWins: " + getCookie("ComputerWins"));
-
+// GLOBAL VARIABLES
 let playerWins = getCookie("PlayerWins");
 let computerWins = getCookie("ComputerWins");
 
-// GLOBAL VARIABLES
-
-const constraints = {
-  audio: false,
-  video: {
-    width: { min: 800, ideal: 1120, max: 1120 },
-    height: { min: 450, ideal: 630, max: 630 },
-  },
-};
 let predictedValue = "";
 
 const canvas = document.getElementById("canvas");
@@ -41,6 +33,15 @@ document.addEventListener("DOMContentLoaded", function () {
     setCookie("ComputerWins", 0, 5);
   }
   getCookie("ComputerWins");
+
+  if (!navigator.mediaDevices || !navigator.mediaDevices.enumerateDevices) {
+    console.log("enumerateDevices() not supported.");
+    document.getElementById("selectCamera").style.display = "none";
+    return;
+  } else {
+    selectinputdevices();
+    console.log("selecting input Devices");
+  }
 });
 //Onclicklisteners
 
@@ -86,7 +87,7 @@ function loadPage2() {
   document.getElementById("pageTwo").style.display = "inline-block";
   document.getElementById("pageThree").style.display = "none";
   document.getElementById("pageFour").style.display = "none";
-  stream(constraints, ctx, ctx2);
+  stream(ctx, ctx2);
 }
 //hide everything except for page three
 function loadPage3(img) {
