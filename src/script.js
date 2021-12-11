@@ -40,7 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
     return;
   } else {
     selectinputdevices();
-    console.log("selecting input Devices");
   }
 });
 //Onclicklisteners
