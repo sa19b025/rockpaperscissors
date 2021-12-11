@@ -124,3 +124,7 @@ ul {
 #startButton {
   height: 60px;
 }
+select{
+  width: fit-content;
+  align-self: center;
+}
