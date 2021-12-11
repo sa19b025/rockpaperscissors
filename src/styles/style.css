@@ -124,7 +124,11 @@ ul {
 #startButton {
   height: 60px;
 }
-select{
+select {
   width: fit-content;
   align-self: center;
+  font-size: 18pt;
+}
+.explanation {
+  margin: 1rem;
 }

@@ -23,4 +23,5 @@ export function deleteCookies() {
       "ComputerWins=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
     document.cookie =
       "PlayerWins=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+      document.getElementById("deleteCookies").style.display = "none";
 }

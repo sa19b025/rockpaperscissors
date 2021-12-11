@@ -105,7 +105,13 @@ p {
   margin-left: 5%;
   margin-right: 5%;
 }
-select{
+select {
   width: fit-content;
   align-self: center;
+  font-size: 14pt;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.explanation {
+  margin: 0.5rem;
 }

@@ -27,7 +27,7 @@ export function stream(ctx, ctx2) {
   ctx.fillStyle = "grey";
   ctx.fillRect(0, 0, 224, 224);
   ctx2.fillStyle = "grey";
-  ctx2.fillRect(0, 0, 848, 477);
+  ctx2.fillRect(0, 0, video.width, video.height);
 }
 export function stopvideo(e) {
   var stream = video.srcObject;

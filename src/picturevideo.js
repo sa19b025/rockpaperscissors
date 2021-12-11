@@ -1,6 +1,6 @@
 export function picturevideo(ctx, ctx2, video, canvas, canvas2){
   ctx.drawImage(video, 0, 49, 224, 126);
-  ctx2.drawImage(video, 0, 0, 848, 477);
+  ctx2.drawImage(video, 0, 0);
   console.log("canvas drawn");
   
   let img = document.getElementById("photo");
